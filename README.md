@@ -101,3 +101,5 @@ All code must be executable. Any code that does not run in Python3 will be given
 
 Example screenshot attached.
 
+![Screen Shot](https://raw.githubusercontent.com/SI507-206-W18/507-hw05-oauth-and-caching/master/ScreenShot.png)
+
