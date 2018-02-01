@@ -26,11 +26,14 @@ requests.get(url, auth=auth)
 #Code for OAuth ends
 
 #Write your code below:
+#Code for Part 3:Caching
+#Finish parts 1 and 2 and then come back to this
+
 #Code for Part 1:Get Tweets
 
 #Code for Part 2:Analyze Tweets
 
-#Code for Part 3:Caching
+
 
 if __name__ == "__main__":
     if not consumer_key or not consumer_secret:
