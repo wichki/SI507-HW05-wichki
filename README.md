@@ -1,6 +1,5 @@
-# hw05-oauth-and-caching
 
-SI 206 
+SI 507 
 Homework 5: OAuth and Caching
 
 Homework Objective:
@@ -8,10 +7,11 @@ Know what is OAuth and how to use it
 Know how to look through API documentation and use it for making requests
 Know how to use caching
 Supporting Material:
-Files: hw5_twitter.py
-secret_data.py
+Starter code provided in github repository: 
+hw5_twitter.py
+secret_data.py (stores your credentials, don’t upload)
 
-https://developer.twitter.com/en/docs/tweets/timelines/api-reference/get-statuses-user_timeline.html
+Documentation for Twitter API: https://developer.twitter.com/en/docs/tweets/timelines/api-reference/get-statuses-user_timeline.html
 
 
 Goal: Create a program to analyze the twitter timeline of a selected user to list their most frequently used words (20pts)
@@ -49,19 +49,20 @@ Example:
 		……………..
 
 
-Part 2: Analyse tweets using NLTK to find most common words(10 points)--link nltk doc
+Part 2: Analyse tweets using NLTK to find most common words(10 points)
 Take a moment to look through the json file you just created to get a sense of the data you are interacting with. 
-Note: You will not be using tweet.json in further instructions. It’s for your reference only. Feel free to comment that section of code.
+Note: You will not be using tweet.json in further instructions. It’s for your reference only. Feel free to comment the section of code that writes to tweet.json
 
-Step 1: You will require the NLTK module for this section. If you don’t have nltk installed, here are related instructions:http://www.nltk.org/install.html
-Step 2: Gather all tweets data by accessing the text portion of the tweets. Once you have this, tokenize the words. 
-Step 3: Get a frequency distribution of the tokenized list. 
+Step 1: We will now use the NLTK module.
+If you don’t have nltk installed, here are related instructions:http://www.nltk.org/install.html
+
+Step 2: Gather tweet data from the response of twitter api. Once you have this, tokenize the words. You can find a nice example of tokenizing text on the homepage of NLTK under “Some simple things you can do with NLTK”
+
+Step 3: Next, get a frequency distribution of the tokenized list. You can later use this to find the most frequent words.
+
 Step 4: Ignore stop words
 (1) ignore any words that do not start with an alphabetic character [a-zA-Z], 
 (2) ignore 'http', 'https', and 'RT' (these show up a lot in Twitter)
-
-Hint for using NLTK stop words:https://pythonspot.com/nltk-stop-words/
-
 Step 4: Print the 5 most frequently used words using the frequency distribution you just created.
 
 Part 3: Implement Caching (5 points)
@@ -69,20 +70,13 @@ Let’s now add caching functionality to the above code. Caching helps reduce pr
 
 Step 1: Feel free to use the caching code used in class. In the cache, we are associating fullURL of the request with the response we receive from twitter for that URL.
 
-Step 2: Verify that your code is picking up data from the cache when you repeat the same request (getting 25 tweets from the umsi account). Add a line of code to the caching code block to print: “Fetching cached data...” when data is fetched from the cache.
-Also verify that your code fetches data from twitter instead of the cache for new requests( try getting data for a different user account).
-
+Step 2: Verify that your code is picking up data from the cache when you repeat the same request (Ex: getting 25 tweets from the umsi account). Also verify that your code fetches data from twitter instead of the cache for new requests( try getting data for a different user account).
+You can do this by adding a line of code to the caching code block to print: “Fetching cached data...” when data is fetched from the cache.
 Extra Credit 1 (2 pts)
 Twitter Boggle: Take two twitter accounts and analyze their tweets to find words they have in common and words that are unique to each account. Show the 5 most frequent different (unique) words for each account and the 5 most frequent common words (shared by both).
 
-Extra Credit 2 (2 pts)- for 206
-Fetch 25 tweets from the UMSI twitter account (https://twitter.com/umsi) and print the 10 most commonly occurring “Basic Verbs”. Ignore stop words.
-
-Use NLTK for analyzing parts of speech. Use NLTK's default POS tagger and tagset (this will use the UPenn treebank tagset)
-a "verb" is anything that is tagged VB*
 Extra Credit 2 (2 pts) -for 507
 Implement better caching strategy: Caching the tweets by URL is not the best approach for twitter data. This is because we aren’t checking if there is new data available on twitter. Modify the caching mechanism to instead cache by users and tweet ids such that you would fetch data from twitter if there is a new tweet from that user ( maybe check if there is a tweet ID beyond what you have in the cache)
-
 
 What to turn in:
 
