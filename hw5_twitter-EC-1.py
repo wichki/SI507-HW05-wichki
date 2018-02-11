@@ -120,18 +120,47 @@ word_freq2 = nltk.FreqDist(words_we_want2)
 print(word_freq1.most_common(5))
 print(word_freq2.most_common(5))
 
+comp1 = {}
+comp2 = {}
+
 print("\nHere are the five most common words for {}: ".format(username1))
 for k,v in word_freq1.most_common(5):
+    comp1[k] = v
     print("'{}' appears {} times".format(k,v))
 
 print("\nHere are the five most common words for {}: ".format(username2))
 for k,v in word_freq2.most_common(5):
+    comp2[k] = v
     print("'{}' appears {} times".format(k,v))
 
-print("\nHere are the five most common words shared by {} and {}: ".format(username1, username2))
-for k,v in word_freq2.most_common(5):
-    print("'{}' appears {} times".format(k,v))
-print("\n")
+print("\nHere are the more frequent unique words: \n")
+
+# holder = {}
+# for a,b in word_freq1.most_common(5):
+#     if holder[a] == b:
+#         del holder[a]
+#     else:
+#         holder[a] = b
+
+print(comp1.keys())
+print(comp2)
+
+# print(comp1.keys()-comp2.keys())
+# print(comp1 == comp2)
+
+sortedd = {}
+
+for k in comp1:
+    if comp1[k] >= comp2[k]:
+        sortedd[k] = v
+    else:
+        pass
+
+# print(sortedd)
+# print("\nHere are the five most common words shared by {} and {}: ".format(username1, username2))
+# for k,v in word_freq2.most_common(5):
+#     print("'{}' appears {} times".format(k,v))
+# print("\n")
 
 shared_words = {}
 
@@ -147,10 +176,15 @@ for k,v in word_freq2.most_common(10):
     except:
         shared_words[k] = v
 
-print(shared_words)
-sorted_shared_words = sorted(shared_words.items(), key=lambda x: x[1])
-print(sorted_shared_words)
-#Code for Part 2:Analyze Tweets
+# print(shared_words)
+sorted_shared_words = sorted(shared_words.items(), key=lambda x: x[1], reverse=True)
+# print(sorted_shared_words)
+
+# print("\nHere is a list of sorted shared words: ")
+# for k,v in sorted_shared_words[:5]:
+#     print("'{}' appears {} times".format(k,v))
+
+# Code for Part 2:Analyze Tweets
 
 if __name__ == "__main__":
     if not consumer_key or not consumer_secret:
