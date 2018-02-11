@@ -49,8 +49,8 @@ def unique_id_generator(base_url, params_diction):
     for key in alphabetized_keys:
         lst.append("{}-{}".format(key, params_diction[key]))
 
-    unique_id = base_url + "_".join(lst) # combine the baseurl and the formatted pairs of keys and values
-    return unique_id # return a unique id of the request
+    unique_id = base_url + "_".join(lst)
+    return unique_id
 
 #Code for Part 1:Get Tweets
 
@@ -82,6 +82,8 @@ json_data = json.dumps(search, indent=2)
 f.write(json_data)
 f.close()
 
+#Code for Part 2:Analyze Tweets
+
 total_string = ""
 for i in search:
     total_string += i["text"]
@@ -102,13 +104,12 @@ for i in token_words:
 word_freq = nltk.FreqDist(words_we_want)
 # print(word_freq.most_common(5))
 
-print("\nHere are the five more common words: ")
+print("\nUser: {}".format(username))
+print("Tweets analyzed: {}".format(num_tweets))
+print("Five most frequent/common words: ")
 for k,v in word_freq.most_common(5):
     print("'{}' appears {} times".format(k,v))
-print("\n")
 
-
-#Code for Part 2:Analyze Tweets
 
 if __name__ == "__main__":
     if not consumer_key or not consumer_secret:
