@@ -142,19 +142,35 @@ print("\nHere are the more frequent unique words: \n")
 #     else:
 #         holder[a] = b
 
-print(comp1.keys())
-print(comp2)
+print("A", comp1)
+print("B", comp2)
+
+comp3 = {}
+
+for i in comp1:
+    if i in comp2:
+        pass
+    else:
+        comp3[i] = comp1[i]
+
+for i in comp2:
+    if i in comp1:
+        pass
+    else:
+        comp3[i] = comp2[i]
+
+print(comp3)
 
 # print(comp1.keys()-comp2.keys())
 # print(comp1 == comp2)
 
-sortedd = {}
-
-for k in comp1:
-    if comp1[k] >= comp2[k]:
-        sortedd[k] = v
-    else:
-        pass
+# sortedd = {}
+#
+# for k in comp1:
+#     if comp1[k] >= comp2[k]:
+#         sortedd[k] = v
+#     else:
+#         pass
 
 # print(sortedd)
 # print("\nHere are the five most common words shared by {} and {}: ".format(username1, username2))

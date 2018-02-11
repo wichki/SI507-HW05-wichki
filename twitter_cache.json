@@ -28755,5 +28755,531 @@
    "possibly_sensitive": false,
    "lang": "en"
   }
+ ],
+ "https://api.twitter.com/1.1/statuses/user_timeline.jsoncount-2_screen_name-nytimes": [
+  {
+   "created_at": "Sun Feb 11 21:15:07 +0000 2018",
+   "id": 962797169244852226,
+   "id_str": "962797169244852226",
+   "text": "In one of the more awkward box office pairings in memory, the rough-sex sequel \u201cFifty Shades Freed\u201d was No. 1 at No\u2026 https://t.co/XU0gCkev36",
+   "truncated": true,
+   "entities": {
+    "hashtags": [],
+    "symbols": [],
+    "user_mentions": [],
+    "urls": [
+     {
+      "url": "https://t.co/XU0gCkev36",
+      "expanded_url": "https://twitter.com/i/web/status/962797169244852226",
+      "display_url": "twitter.com/i/web/status/9\u2026",
+      "indices": [
+       117,
+       140
+      ]
+     }
+    ]
+   },
+   "source": "<a href=\"http://www.socialflow.com\" rel=\"nofollow\">SocialFlow</a>",
+   "in_reply_to_status_id": null,
+   "in_reply_to_status_id_str": null,
+   "in_reply_to_user_id": null,
+   "in_reply_to_user_id_str": null,
+   "in_reply_to_screen_name": null,
+   "user": {
+    "id": 807095,
+    "id_str": "807095",
+    "name": "The New York Times",
+    "screen_name": "nytimes",
+    "location": "New York City",
+    "description": "Where the conversation begins. Follow for breaking news, special reports, RTs of our journalists and more. Visit https://t.co/UVJRxNXe00 to share news tips.",
+    "url": "http://t.co/ahvuWqicF9",
+    "entities": {
+     "url": {
+      "urls": [
+       {
+        "url": "http://t.co/ahvuWqicF9",
+        "expanded_url": "http://www.nytimes.com/",
+        "display_url": "nytimes.com",
+        "indices": [
+         0,
+         22
+        ]
+       }
+      ]
+     },
+     "description": {
+      "urls": [
+       {
+        "url": "https://t.co/UVJRxNXe00",
+        "expanded_url": "http://nyti.ms/2io2WFI",
+        "display_url": "nyti.ms/2io2WFI",
+        "indices": [
+         113,
+         136
+        ]
+       }
+      ]
+     }
+    },
+    "protected": false,
+    "followers_count": 41104394,
+    "friends_count": 883,
+    "listed_count": 194244,
+    "created_at": "Fri Mar 02 20:41:42 +0000 2007",
+    "favourites_count": 16234,
+    "utc_offset": -18000,
+    "time_zone": "Eastern Time (US & Canada)",
+    "geo_enabled": false,
+    "verified": true,
+    "statuses_count": 309226,
+    "lang": "en",
+    "contributors_enabled": false,
+    "is_translator": false,
+    "is_translation_enabled": true,
+    "profile_background_color": "131516",
+    "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/736339684/948f072cc2da4e3a5e9f2ebfb3b1a0e7.png",
+    "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/736339684/948f072cc2da4e3a5e9f2ebfb3b1a0e7.png",
+    "profile_background_tile": true,
+    "profile_image_url": "http://pbs.twimg.com/profile_images/942784892882112513/qV4xB0I3_normal.jpg",
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/942784892882112513/qV4xB0I3_normal.jpg",
+    "profile_banner_url": "https://pbs.twimg.com/profile_banners/807095/1513258368",
+    "profile_link_color": "607696",
+    "profile_sidebar_border_color": "FFFFFF",
+    "profile_sidebar_fill_color": "EFEFEF",
+    "profile_text_color": "333333",
+    "profile_use_background_image": true,
+    "has_extended_profile": false,
+    "default_profile": false,
+    "default_profile_image": false,
+    "following": false,
+    "follow_request_sent": false,
+    "notifications": false,
+    "translator_type": "none"
+   },
+   "geo": null,
+   "coordinates": null,
+   "place": null,
+   "contributors": null,
+   "is_quote_status": false,
+   "retweet_count": 29,
+   "favorite_count": 104,
+   "favorited": false,
+   "retweeted": false,
+   "possibly_sensitive": false,
+   "lang": "en"
+  },
+  {
+   "created_at": "Sun Feb 11 21:00:23 +0000 2018",
+   "id": 962793462641905666,
+   "id_str": "962793462641905666",
+   "text": "Without a word, only flashing smiles, Kim Jong-un's sister outflanked Vice President Mike Pence in diplomacy https://t.co/c2gTuSTF9e",
+   "truncated": false,
+   "entities": {
+    "hashtags": [],
+    "symbols": [],
+    "user_mentions": [],
+    "urls": [
+     {
+      "url": "https://t.co/c2gTuSTF9e",
+      "expanded_url": "http://nyti.ms/2EkU0Pm",
+      "display_url": "nyti.ms/2EkU0Pm",
+      "indices": [
+       109,
+       132
+      ]
+     }
+    ]
+   },
+   "source": "<a href=\"http://www.socialflow.com\" rel=\"nofollow\">SocialFlow</a>",
+   "in_reply_to_status_id": null,
+   "in_reply_to_status_id_str": null,
+   "in_reply_to_user_id": null,
+   "in_reply_to_user_id_str": null,
+   "in_reply_to_screen_name": null,
+   "user": {
+    "id": 807095,
+    "id_str": "807095",
+    "name": "The New York Times",
+    "screen_name": "nytimes",
+    "location": "New York City",
+    "description": "Where the conversation begins. Follow for breaking news, special reports, RTs of our journalists and more. Visit https://t.co/UVJRxNXe00 to share news tips.",
+    "url": "http://t.co/ahvuWqicF9",
+    "entities": {
+     "url": {
+      "urls": [
+       {
+        "url": "http://t.co/ahvuWqicF9",
+        "expanded_url": "http://www.nytimes.com/",
+        "display_url": "nytimes.com",
+        "indices": [
+         0,
+         22
+        ]
+       }
+      ]
+     },
+     "description": {
+      "urls": [
+       {
+        "url": "https://t.co/UVJRxNXe00",
+        "expanded_url": "http://nyti.ms/2io2WFI",
+        "display_url": "nyti.ms/2io2WFI",
+        "indices": [
+         113,
+         136
+        ]
+       }
+      ]
+     }
+    },
+    "protected": false,
+    "followers_count": 41104394,
+    "friends_count": 883,
+    "listed_count": 194244,
+    "created_at": "Fri Mar 02 20:41:42 +0000 2007",
+    "favourites_count": 16234,
+    "utc_offset": -18000,
+    "time_zone": "Eastern Time (US & Canada)",
+    "geo_enabled": false,
+    "verified": true,
+    "statuses_count": 309226,
+    "lang": "en",
+    "contributors_enabled": false,
+    "is_translator": false,
+    "is_translation_enabled": true,
+    "profile_background_color": "131516",
+    "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/736339684/948f072cc2da4e3a5e9f2ebfb3b1a0e7.png",
+    "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/736339684/948f072cc2da4e3a5e9f2ebfb3b1a0e7.png",
+    "profile_background_tile": true,
+    "profile_image_url": "http://pbs.twimg.com/profile_images/942784892882112513/qV4xB0I3_normal.jpg",
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/942784892882112513/qV4xB0I3_normal.jpg",
+    "profile_banner_url": "https://pbs.twimg.com/profile_banners/807095/1513258368",
+    "profile_link_color": "607696",
+    "profile_sidebar_border_color": "FFFFFF",
+    "profile_sidebar_fill_color": "EFEFEF",
+    "profile_text_color": "333333",
+    "profile_use_background_image": true,
+    "has_extended_profile": false,
+    "default_profile": false,
+    "default_profile_image": false,
+    "following": false,
+    "follow_request_sent": false,
+    "notifications": false,
+    "translator_type": "none"
+   },
+   "geo": null,
+   "coordinates": null,
+   "place": null,
+   "contributors": null,
+   "is_quote_status": false,
+   "retweet_count": 89,
+   "favorite_count": 310,
+   "favorited": false,
+   "retweeted": false,
+   "possibly_sensitive": false,
+   "lang": "en"
+  }
+ ],
+ "https://api.twitter.com/1.1/statuses/user_timeline.jsoncount-2_screen_name-latimes": [
+  {
+   "created_at": "Sun Feb 11 21:05:06 +0000 2018",
+   "id": 962794648921141248,
+   "id_str": "962794648921141248",
+   "text": "A high school student's science fair project linking race and low intelligence spurs a school district investigatio\u2026 https://t.co/5j1QT9WCNd",
+   "truncated": true,
+   "entities": {
+    "hashtags": [],
+    "symbols": [],
+    "user_mentions": [],
+    "urls": [
+     {
+      "url": "https://t.co/5j1QT9WCNd",
+      "expanded_url": "https://twitter.com/i/web/status/962794648921141248",
+      "display_url": "twitter.com/i/web/status/9\u2026",
+      "indices": [
+       117,
+       140
+      ]
+     }
+    ]
+   },
+   "source": "<a href=\"http://www.hootsuite.com\" rel=\"nofollow\">Hootsuite</a>",
+   "in_reply_to_status_id": null,
+   "in_reply_to_status_id_str": null,
+   "in_reply_to_user_id": null,
+   "in_reply_to_user_id_str": null,
+   "in_reply_to_screen_name": null,
+   "user": {
+    "id": 16664681,
+    "id_str": "16664681",
+    "name": "Los Angeles Times",
+    "screen_name": "latimes",
+    "location": "Los Angeles, CA",
+    "description": "News from Los Angeles and the world. Staffed by http://t.co/zb8HyvYyAJ editors.",
+    "url": "http://t.co/JvbZRDfNzf",
+    "entities": {
+     "url": {
+      "urls": [
+       {
+        "url": "http://t.co/JvbZRDfNzf",
+        "expanded_url": "http://latimes.com/",
+        "display_url": "latimes.com",
+        "indices": [
+         0,
+         22
+        ]
+       }
+      ]
+     },
+     "description": {
+      "urls": [
+       {
+        "url": "http://t.co/zb8HyvYyAJ",
+        "expanded_url": "http://latimes.com",
+        "display_url": "latimes.com",
+        "indices": [
+         48,
+         70
+        ]
+       }
+      ]
+     }
+    },
+    "protected": false,
+    "followers_count": 3196391,
+    "friends_count": 10645,
+    "listed_count": 30599,
+    "created_at": "Thu Oct 09 11:07:42 +0000 2008",
+    "favourites_count": 1904,
+    "utc_offset": -28800,
+    "time_zone": "Pacific Time (US & Canada)",
+    "geo_enabled": true,
+    "verified": true,
+    "statuses_count": 189788,
+    "lang": "en",
+    "contributors_enabled": false,
+    "is_translator": false,
+    "is_translation_enabled": false,
+    "profile_background_color": "FFFFFF",
+    "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/596769492/sp4uqn6gr7cwmjefat2j.jpeg",
+    "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/596769492/sp4uqn6gr7cwmjefat2j.jpeg",
+    "profile_background_tile": false,
+    "profile_image_url": "http://pbs.twimg.com/profile_images/546329819919560704/XMWy2Z50_normal.jpeg",
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/546329819919560704/XMWy2Z50_normal.jpeg",
+    "profile_banner_url": "https://pbs.twimg.com/profile_banners/16664681/1402448809",
+    "profile_link_color": "009999",
+    "profile_sidebar_border_color": "FFFFFF",
+    "profile_sidebar_fill_color": "EFEFEF",
+    "profile_text_color": "615F61",
+    "profile_use_background_image": true,
+    "has_extended_profile": false,
+    "default_profile": false,
+    "default_profile_image": false,
+    "following": false,
+    "follow_request_sent": false,
+    "notifications": false,
+    "translator_type": "regular"
+   },
+   "geo": null,
+   "coordinates": null,
+   "place": null,
+   "contributors": null,
+   "is_quote_status": false,
+   "retweet_count": 17,
+   "favorite_count": 26,
+   "favorited": false,
+   "retweeted": false,
+   "possibly_sensitive": false,
+   "lang": "en"
+  },
+  {
+   "created_at": "Sun Feb 11 20:35:05 +0000 2018",
+   "id": 962787093855592455,
+   "id_str": "962787093855592455",
+   "text": "Maryland recognizes an Indian tribe, but other Native Americans aren't happy about it https://t.co/1RqfRLmjfd https://t.co/2Dm6vUrh67",
+   "truncated": false,
+   "entities": {
+    "hashtags": [],
+    "symbols": [],
+    "user_mentions": [],
+    "urls": [
+     {
+      "url": "https://t.co/1RqfRLmjfd",
+      "expanded_url": "http://lat.ms/2CfVC7m",
+      "display_url": "lat.ms/2CfVC7m",
+      "indices": [
+       86,
+       109
+      ]
+     }
+    ],
+    "media": [
+     {
+      "id": 962787091372322816,
+      "id_str": "962787091372322816",
+      "indices": [
+       110,
+       133
+      ],
+      "media_url": "http://pbs.twimg.com/media/DVyBwi-UMAAaNlk.jpg",
+      "media_url_https": "https://pbs.twimg.com/media/DVyBwi-UMAAaNlk.jpg",
+      "url": "https://t.co/2Dm6vUrh67",
+      "display_url": "pic.twitter.com/2Dm6vUrh67",
+      "expanded_url": "https://twitter.com/latimes/status/962787093855592455/photo/1",
+      "type": "photo",
+      "sizes": {
+       "medium": {
+        "w": 1200,
+        "h": 675,
+        "resize": "fit"
+       },
+       "thumb": {
+        "w": 150,
+        "h": 150,
+        "resize": "crop"
+       },
+       "small": {
+        "w": 680,
+        "h": 383,
+        "resize": "fit"
+       },
+       "large": {
+        "w": 1400,
+        "h": 788,
+        "resize": "fit"
+       }
+      }
+     }
+    ]
+   },
+   "extended_entities": {
+    "media": [
+     {
+      "id": 962787091372322816,
+      "id_str": "962787091372322816",
+      "indices": [
+       110,
+       133
+      ],
+      "media_url": "http://pbs.twimg.com/media/DVyBwi-UMAAaNlk.jpg",
+      "media_url_https": "https://pbs.twimg.com/media/DVyBwi-UMAAaNlk.jpg",
+      "url": "https://t.co/2Dm6vUrh67",
+      "display_url": "pic.twitter.com/2Dm6vUrh67",
+      "expanded_url": "https://twitter.com/latimes/status/962787093855592455/photo/1",
+      "type": "photo",
+      "sizes": {
+       "medium": {
+        "w": 1200,
+        "h": 675,
+        "resize": "fit"
+       },
+       "thumb": {
+        "w": 150,
+        "h": 150,
+        "resize": "crop"
+       },
+       "small": {
+        "w": 680,
+        "h": 383,
+        "resize": "fit"
+       },
+       "large": {
+        "w": 1400,
+        "h": 788,
+        "resize": "fit"
+       }
+      }
+     }
+    ]
+   },
+   "source": "<a href=\"http://www.hootsuite.com\" rel=\"nofollow\">Hootsuite</a>",
+   "in_reply_to_status_id": null,
+   "in_reply_to_status_id_str": null,
+   "in_reply_to_user_id": null,
+   "in_reply_to_user_id_str": null,
+   "in_reply_to_screen_name": null,
+   "user": {
+    "id": 16664681,
+    "id_str": "16664681",
+    "name": "Los Angeles Times",
+    "screen_name": "latimes",
+    "location": "Los Angeles, CA",
+    "description": "News from Los Angeles and the world. Staffed by http://t.co/zb8HyvYyAJ editors.",
+    "url": "http://t.co/JvbZRDfNzf",
+    "entities": {
+     "url": {
+      "urls": [
+       {
+        "url": "http://t.co/JvbZRDfNzf",
+        "expanded_url": "http://latimes.com/",
+        "display_url": "latimes.com",
+        "indices": [
+         0,
+         22
+        ]
+       }
+      ]
+     },
+     "description": {
+      "urls": [
+       {
+        "url": "http://t.co/zb8HyvYyAJ",
+        "expanded_url": "http://latimes.com",
+        "display_url": "latimes.com",
+        "indices": [
+         48,
+         70
+        ]
+       }
+      ]
+     }
+    },
+    "protected": false,
+    "followers_count": 3196391,
+    "friends_count": 10645,
+    "listed_count": 30599,
+    "created_at": "Thu Oct 09 11:07:42 +0000 2008",
+    "favourites_count": 1904,
+    "utc_offset": -28800,
+    "time_zone": "Pacific Time (US & Canada)",
+    "geo_enabled": true,
+    "verified": true,
+    "statuses_count": 189788,
+    "lang": "en",
+    "contributors_enabled": false,
+    "is_translator": false,
+    "is_translation_enabled": false,
+    "profile_background_color": "FFFFFF",
+    "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/596769492/sp4uqn6gr7cwmjefat2j.jpeg",
+    "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/596769492/sp4uqn6gr7cwmjefat2j.jpeg",
+    "profile_background_tile": false,
+    "profile_image_url": "http://pbs.twimg.com/profile_images/546329819919560704/XMWy2Z50_normal.jpeg",
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/546329819919560704/XMWy2Z50_normal.jpeg",
+    "profile_banner_url": "https://pbs.twimg.com/profile_banners/16664681/1402448809",
+    "profile_link_color": "009999",
+    "profile_sidebar_border_color": "FFFFFF",
+    "profile_sidebar_fill_color": "EFEFEF",
+    "profile_text_color": "615F61",
+    "profile_use_background_image": true,
+    "has_extended_profile": false,
+    "default_profile": false,
+    "default_profile_image": false,
+    "following": false,
+    "follow_request_sent": false,
+    "notifications": false,
+    "translator_type": "regular"
+   },
+   "geo": null,
+   "coordinates": null,
+   "place": null,
+   "contributors": null,
+   "is_quote_status": false,
+   "retweet_count": 10,
+   "favorite_count": 5,
+   "favorited": false,
+   "retweeted": false,
+   "possibly_sensitive": false,
+   "lang": "en"
+  }
  ]
 }
