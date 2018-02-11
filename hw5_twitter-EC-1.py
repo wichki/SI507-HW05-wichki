@@ -117,28 +117,27 @@ word_freq1 = nltk.FreqDist(words_we_want1)
 word_freq2 = nltk.FreqDist(words_we_want2)
 # print(word_freq.most_common(5))
 
-print(word_freq1.most_common(5))
-print(word_freq2.most_common(5))
+# print(word_freq1.most_common(5))
+# print(word_freq2.most_common(5))
 
 comp1 = {}
 comp2 = {}
 
-print("\nHere are the five most common words for {}: ".format(username1))
+# print("\nHere are the five most common words for {}: ".format(username1))
 for k,v in word_freq1.most_common(5):
     comp1[k] = v
-    print("'{}' appears {} times".format(k,v))
+    # print("'{}' appears {} times".format(k,v))
 
-print("\nHere are the five most common words for {}: ".format(username2))
+# print("\nHere are the five most common words for {}: ".format(username2))
 for k,v in word_freq2.most_common(5):
     comp2[k] = v
-    print("'{}' appears {} times".format(k,v))
+    # print("'{}' appears {} times".format(k,v))
 
 # print("\nHere are the most frequent  words: \n")
-# print("A", comp1)
-# print("B", comp2)
+print("A", comp1)
+print("B", comp2)
 
 diff_words = {}
-
 for i in comp1:
     if i in comp2:
         pass
@@ -151,8 +150,27 @@ for i in comp2:
     else:
         diff_words[i] = comp2[i]
 
-
 shared_words = {}
+for i in comp1:
+    if i in comp2:
+        shared_words[i] = comp1[i] + comp2[i]
+    else:
+        pass
+
+for i in comp2:
+    if i in comp1:
+        shared_words[i] = comp2[i] + comp1[i]
+    else:
+        pass
+
+sorted_shared_words = sorted(shared_words.items(), key=lambda x: x[1], reverse=True)
+
+# for k,v in sorted_shared_words:
+#     print(k,v)
+# print(sorted_shared_words)
+
+# for i in sorted_shared_words:
+    # print(type(i))
 
 # for k,v in comp1.most_common(5):
 #     try:
@@ -166,35 +184,15 @@ shared_words = {}
 #     except:
 #         shared_words[k] = v
 
-# print(shared_words)
-# sorted_shared_words = sorted(shared_words.items(), key=lambda x: x[1], reverse=True)
-# print(sorted_shared_words)
 
 print("\nHere are the most frequent unique words:")
 for i in diff_words:
     print("'{}' appeared {} times".format(i, diff_words[i]))
 
 print("\nHere are the most frequent words in common:")
-for i in shared_words:
-    print("'{}' appeared {} times".format(i, shared_words[i]))
+for k,v in sorted_shared_words:
+    print("'{}' appeared {} times".format(k, v))
 
-
-# for k in comp1:
-#     if comp1[k] >= comp2[k]:
-#         sortedd[k] = v
-#     else:
-#         pass
-
-# print(sortedd)
-# print("\nHere are the five most common words shared by {} and {}: ".format(username1, username2))
-# for k,v in word_freq2.most_common(5):
-#     print("'{}' appears {} times".format(k,v))
-# print("\n")
-
-
-# print("\nHere is a list of sorted shared words: ")
-# for k,v in sorted_shared_words[:5]:
-#     print("'{}' appears {} times".format(k,v))
 
 # Code for Part 2:Analyze Tweets
 
