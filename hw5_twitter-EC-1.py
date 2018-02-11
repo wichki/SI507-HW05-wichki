@@ -133,39 +133,52 @@ for k,v in word_freq2.most_common(5):
     comp2[k] = v
     print("'{}' appears {} times".format(k,v))
 
-print("\nHere are the more frequent unique words: \n")
+# print("\nHere are the most frequent  words: \n")
+# print("A", comp1)
+# print("B", comp2)
 
-# holder = {}
-# for a,b in word_freq1.most_common(5):
-#     if holder[a] == b:
-#         del holder[a]
-#     else:
-#         holder[a] = b
-
-print("A", comp1)
-print("B", comp2)
-
-comp3 = {}
+diff_words = {}
 
 for i in comp1:
     if i in comp2:
         pass
     else:
-        comp3[i] = comp1[i]
+        diff_words[i] = comp1[i]
 
 for i in comp2:
     if i in comp1:
         pass
     else:
-        comp3[i] = comp2[i]
+        diff_words[i] = comp2[i]
 
-print(comp3)
 
-# print(comp1.keys()-comp2.keys())
-# print(comp1 == comp2)
+shared_words = {}
 
-# sortedd = {}
+# for k,v in comp1.most_common(5):
+#     try:
+#         shared_words[k] += v
+#     except:
+#         shared_words[k] = v
 #
+# for k,v in word_freq2.most_common(10):
+#     try:
+#         shared_words[k] += v
+#     except:
+#         shared_words[k] = v
+
+# print(shared_words)
+# sorted_shared_words = sorted(shared_words.items(), key=lambda x: x[1], reverse=True)
+# print(sorted_shared_words)
+
+print("\nHere are the most frequent unique words:")
+for i in diff_words:
+    print("'{}' appeared {} times".format(i, diff_words[i]))
+
+print("\nHere are the most frequent words in common:")
+for i in shared_words:
+    print("'{}' appeared {} times".format(i, shared_words[i]))
+
+
 # for k in comp1:
 #     if comp1[k] >= comp2[k]:
 #         sortedd[k] = v
@@ -178,23 +191,6 @@ print(comp3)
 #     print("'{}' appears {} times".format(k,v))
 # print("\n")
 
-shared_words = {}
-
-for k,v in word_freq1.most_common(10):
-    try:
-        shared_words[k] += v
-    except:
-        shared_words[k] = v
-
-for k,v in word_freq2.most_common(10):
-    try:
-        shared_words[k] += v
-    except:
-        shared_words[k] = v
-
-# print(shared_words)
-sorted_shared_words = sorted(shared_words.items(), key=lambda x: x[1], reverse=True)
-# print(sorted_shared_words)
 
 # print("\nHere is a list of sorted shared words: ")
 # for k,v in sorted_shared_words[:5]:
