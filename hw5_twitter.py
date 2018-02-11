@@ -62,13 +62,13 @@ def getTweets(username, num_tweets):
 
     # Check cache
     if unique_id in cache_diction:
-        print("Getting cached data...")
+        print("Getting {} tweets from {} using cached data...".format(num_tweets, username))
         return cache_diction[unique_id]
     else:
-        print("Making a new request to the Twitter API...")
+        print("Getting {} tweets from {} using the Twitter API...".format(num_tweets, username))
         response = requests.get(baseURL, params_d, auth=auth)
         cache_diction[unique_id] = json.loads(response.text)
-        temporary_cache = json.dumps(cache_diction, indent=1)
+        temporary_cache = json.dumps(cache_diction, indent=2)
         f = open(cache_name,"w")
         f.write(temporary_cache)
         f.close() # Close the open file
@@ -76,11 +76,11 @@ def getTweets(username, num_tweets):
 
 search = getTweets(username, num_tweets)
 
-results_file = "tweets.json"
-f = open(results_file, "w")
-json_data = json.dumps(search, indent=2)
-f.write(json_data)
-f.close()
+# results_file = "tweet.json"
+# f = open(results_file, "w")
+# json_data = json.dumps(search, indent=2)
+# f.write(json_data)
+# f.close()
 
 #Code for Part 2:Analyze Tweets
 
@@ -98,7 +98,6 @@ ignore_list = ["http", "https", "RT"]
 for i in token_words:
     if i[0].isalpha() and i not in ignore_list:
         words_we_want.append(i)
-
 # print(words_we_want)
 
 word_freq = nltk.FreqDist(words_we_want)
