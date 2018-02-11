@@ -1,0 +1,105 @@
+{
+ "https://api.twitter.com/1.1/statuses/user_timeline.jsoncount-1_screen_name-umsi": [
+  {
+   "created_at": "Sat Feb 10 17:27:36 +0000 2018",
+   "id": 962377522573926400,
+   "id_str": "962377522573926400",
+   "text": "QuasiCon 2018 | Make sure check out our Session 3: Panel Presenation \"Contemporary Trends in Information Science: D\u2026 https://t.co/W1VYkEd8oF",
+   "truncated": true,
+   "entities": {
+    "hashtags": [],
+    "symbols": [],
+    "user_mentions": [],
+    "urls": [
+     {
+      "url": "https://t.co/W1VYkEd8oF",
+      "expanded_url": "https://twitter.com/i/web/status/962377522573926400",
+      "display_url": "twitter.com/i/web/status/9\u2026",
+      "indices": [
+       117,
+       140
+      ]
+     }
+    ]
+   },
+   "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+   "in_reply_to_status_id": null,
+   "in_reply_to_status_id_str": null,
+   "in_reply_to_user_id": null,
+   "in_reply_to_user_id_str": null,
+   "in_reply_to_screen_name": null,
+   "user": {
+    "id": 18033550,
+    "id_str": "18033550",
+    "name": "SchoolofInformation",
+    "screen_name": "umsi",
+    "location": "Ann Arbor, MI",
+    "description": "The University of Michigan School of Information creates and shares knowledge so that people will use information -- with technology -- to build a better world.",
+    "url": "http://t.co/4pWAWmnRR4",
+    "entities": {
+     "url": {
+      "urls": [
+       {
+        "url": "http://t.co/4pWAWmnRR4",
+        "expanded_url": "http://si.umich.edu",
+        "display_url": "si.umich.edu",
+        "indices": [
+         0,
+         22
+        ]
+       }
+      ]
+     },
+     "description": {
+      "urls": []
+     }
+    },
+    "protected": false,
+    "followers_count": 7330,
+    "friends_count": 1553,
+    "listed_count": 407,
+    "created_at": "Wed Dec 10 22:56:22 +0000 2008",
+    "favourites_count": 4770,
+    "utc_offset": -18000,
+    "time_zone": "Eastern Time (US & Canada)",
+    "geo_enabled": true,
+    "verified": false,
+    "statuses_count": 10703,
+    "lang": "en",
+    "contributors_enabled": false,
+    "is_translator": false,
+    "is_translation_enabled": false,
+    "profile_background_color": "022330",
+    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme15/bg.png",
+    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme15/bg.png",
+    "profile_background_tile": false,
+    "profile_image_url": "http://pbs.twimg.com/profile_images/940327729601417217/ayRfWgvn_normal.jpg",
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/940327729601417217/ayRfWgvn_normal.jpg",
+    "profile_banner_url": "https://pbs.twimg.com/profile_banners/18033550/1513026936",
+    "profile_link_color": "0084B4",
+    "profile_sidebar_border_color": "A8C7F7",
+    "profile_sidebar_fill_color": "C0DFEC",
+    "profile_text_color": "333333",
+    "profile_use_background_image": true,
+    "has_extended_profile": false,
+    "default_profile": false,
+    "default_profile_image": false,
+    "following": false,
+    "follow_request_sent": false,
+    "notifications": false,
+    "translator_type": "none"
+   },
+   "geo": null,
+   "coordinates": null,
+   "place": null,
+   "contributors": null,
+   "is_quote_status": false,
+   "retweet_count": 1,
+   "favorite_count": 2,
+   "favorited": false,
+   "retweeted": false,
+   "possibly_sensitive": false,
+   "lang": "en"
+  }
+ ]
+}

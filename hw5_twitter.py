@@ -33,19 +33,64 @@ requests.get(url, auth=auth)
 #Write your code below:
 #Code for Part 3:Caching
 #Finish parts 1 and 2 and then come back to this
+cache_name = "twitter_cache.json"
+try:
+    cache_file = open(cache_name, "r")
+    cache_content = cache_file.read()
+    cache_diction = json.loads(cache_content)
+    cache_file.close()
+except:
+    cache_diction = {}
+
+def unique_id_generator(base_url, params_diction):
+    alphabetized_keys = sorted(params_diction.keys())
+
+    lst = []
+    for key in alphabetized_keys:
+        lst.append("{}-{}".format(key, params_diction[key]))
+
+    unique_id = base_url + "_".join(lst) # combine the baseurl and the formatted pairs of keys and values
+    return unique_id # return a unique id of the request
 
 #Code for Part 1:Get Tweets
 
-# def getTweets():
-#     baseURL = "https://api.twitter.com/1.1/statuses/user_timeline.json"
-#     params_d = {"screen_name": username, "count": num_tweets}
-#     response = requests.get(baseURL, params_d, auth=auth)
-#     tweets = json.loads(response.text)
-#
-#     total_string = ""
-#     for i in list_of_tweets:
-#         total_string += i["text"]
-#     return total_string
+def getTweets(username, num_tweets):
+    baseURL = "https://api.twitter.com/1.1/statuses/user_timeline.json"
+    params_d = {"screen_name": username, "count": num_tweets}
+
+    unique_id = unique_id_generator(baseURL, params_d)
+
+    # Check cache
+    if unique_id in cache_diction:
+        print("Getting cached data...")
+        return cache_diction[unique_id]
+    else:
+        print("Making a new request to the Twitter API...")
+        response = requests.get(baseURL, params_d, auth=auth)
+        cache_diction[unique_id] = json.loads(response.text)
+        temporary_cache = json.dumps(cache_diction, indent=1)
+        f = open(cache_name,"w")
+        f.write(temporary_cache)
+        f.close() # Close the open file
+        return cache_diction[unique_id]
+        # print(cache_diction)
+
+
+search = getTweets(username, num_tweets)
+
+results_file = "tweets.json"
+f = open(results_file, "w")
+string1 = json.dumps(search, indent=2)
+f.write(string1)
+f.close()
+
+for i in search:
+    print(i["text"])
+
+    # total_string = ""
+    # for i in list_of_tweets:
+    #     total_string += i["text"]
+    # return total_string
 
 # baseURL = "https://api.twitter.com/1.1/statuses/user_timeline.json"
 # params_d = {"screen_name": username, "count": num_tweets}
@@ -90,7 +135,7 @@ for i in word_tokens:
 
 word_freq = nltk.FreqDist(word_tokens)
 
-print(word_freq.most_common(5))
+# print(word_freq.most_common(5))
 
 
 filtered_words = [word for word in stop_words if word not in stopwords.words('hw5')]
