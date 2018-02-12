@@ -86,6 +86,7 @@ search = getTweets(username, num_tweets)
 
 total_string = ""
 for i in search:
+    # print(i)
     total_string += i["text"]
 # print("Combined string: ", total_string)
 

@@ -135,8 +135,8 @@ for k,v in word_freq2.most_common(5):
     # print("'{}' appears {} times".format(k,v))
 
 # print("\nHere are the most frequent  words: \n")
-print("\n{}".format(username1), comp1)
-print("{}".format(username2), comp2)
+# print("\n{}".format(username1), comp1)
+# print("{}".format(username2), comp2)
 
 diff_words = {}
 for i in comp1:
