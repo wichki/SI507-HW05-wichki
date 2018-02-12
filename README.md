@@ -64,7 +64,7 @@ Step 2: Gather tweet data from the response of twitter api. Once you have this, 
 Step 3: Next, get a frequency distribution of the tokenized list. You can later use this to find the most frequent words.
 
 Step 4: Ignore stop words
-(1) ignore any words that do not start with an alphabetic character [a-zA-Z], 
+(1) ignore any words that do not start with an alphabetic character [a-zA-Z],
 (2) ignore 'http', 'https', and 'RT' (these show up a lot in Twitter)
 
 Step 4: Print the 5 most frequently used words using the frequency distribution you just created.
@@ -74,7 +74,7 @@ Let’s now add caching functionality to the above code. Caching helps reduce pr
 
 Step 1: Feel free to use the caching code used in class. Lets name the file "twitter_cache.json". In the cache, we are associating fullURL of the request with the response we receive from twitter for that URL.
 
-Step 2: Verify that your code is picking up data from the cache when you repeat the same request (Ex: getting 25 tweets from the umsi account). Also verify that your code fetches data from twitter instead of the cache for new requests( try getting data for a different user account).
+Step 2: Verify that your code is picking up data from the cache when you repeat the same request (Ex: getting 25 tweets from the umsi account). Also verify that your code fetches data from twitter instead of the cache for new requests( try getting data for a different user account).slc
 You can do this by adding a line of code to the caching code block to print: “Fetching cached data...” when data is fetched from the cache.
 
 Extra Credit 1 (2 pts)

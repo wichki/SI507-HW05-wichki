@@ -81,13 +81,15 @@ search2 = getTweets(username2, num_tweets)
 # print(search1)
 # print(search2)
 
-results_file = "tweets.json"
-f = open(results_file, "w")
-json_data1 = json.dumps(search1, indent=2)
-json_data2 = json.dumps(search2, indent=2)
-f.write(json_data1)
-f.write(json_data2)
-f.close()
+# results_file = "tweets.json"
+# f = open(results_file, "w")
+# json_data1 = json.dumps(search1, indent=2)
+# json_data2 = json.dumps(search2, indent=2)
+# f.write(json_data1)
+# f.write(json_data2)
+# f.close()
+
+# Code for Part 2:Analyze Tweets
 
 total_string1 = ""
 for i in search1:
@@ -115,7 +117,6 @@ for i in token_words2:
 
 word_freq1 = nltk.FreqDist(words_we_want1)
 word_freq2 = nltk.FreqDist(words_we_want2)
-# print(word_freq.most_common(5))
 
 # print(word_freq1.most_common(5))
 # print(word_freq2.most_common(5))
@@ -134,8 +135,8 @@ for k,v in word_freq2.most_common(5):
     # print("'{}' appears {} times".format(k,v))
 
 # print("\nHere are the most frequent  words: \n")
-print("A", comp1)
-print("B", comp2)
+print("\n{}".format(username1), comp1)
+print("{}".format(username2), comp2)
 
 diff_words = {}
 for i in comp1:
@@ -164,8 +165,9 @@ for i in comp2:
         pass
 
 sorted_shared_words = sorted(shared_words.items(), key=lambda x: x[1], reverse=True)
+sorted_diff_words = sorted(diff_words.items(), key=lambda x: x[1], reverse=True)
 
-# for k,v in sorted_shared_words:
+# # for k,v in sorted_shared_words:
 #     print(k,v)
 # print(sorted_shared_words)
 
@@ -185,16 +187,34 @@ sorted_shared_words = sorted(shared_words.items(), key=lambda x: x[1], reverse=T
 #         shared_words[k] = v
 
 
-print("\nHere are the most frequent unique words:")
-for i in diff_words:
-    print("'{}' appeared {} times".format(i, diff_words[i]))
+print("\nUser: {}".format(username1))
+print("Tweets analyzed: {}".format(num_tweets))
+print("\nUser: {}".format(username2))
+print("Tweets analyzed: {}".format(num_tweets))
+# print("Five most frequent/common words: ")
+# for k,v in word_freq.most_common(5):
+#     print("'{}' appears {} times".format(k,v))
 
-print("\nHere are the most frequent words in common:")
+print("\nFive most frequent unique words:")
+
+count = 0
+for k,v in sorted_diff_words:
+    if count <= 4:
+        print("'{}' appeared {} times".format(k,v))
+        count += 1
+    else:
+        pass
+
+# for i in diff_words:
+#     print("'{}' appeared {} times".format(i, diff_words[i]))
+    # count += 1
+
+print("\nFive most frequent words in common:")
 for k,v in sorted_shared_words:
     print("'{}' appeared {} times".format(k, v))
 
-
-# Code for Part 2:Analyze Tweets
+# diff_words5 = diff_words.items()[:5]
+# print(diff_words5)
 
 if __name__ == "__main__":
     if not consumer_key or not consumer_secret:
